@@ -76,6 +76,7 @@ header > nav > ul > li:hover {
 }
 
 .accent {
+  user-select: none;
   color: var(--color-accent);
 }
 
@@ -275,8 +276,8 @@ section {
 
 .socials {
   position: fixed;
-  left: 1rem;
-  bottom: 1rem;
+  left: 2rem;
+  bottom: 2rem;
 
   display: flex;
   justify-content: center;
@@ -304,6 +305,14 @@ section {
 }
 
 @media only screen and (min-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+
+  header > h3 {
+    width: 70%;
+  }
+
   .image-container {
     width: 50%;
   }
@@ -345,16 +354,27 @@ section {
     font-size: medium;
   }
 
+  .container {
+    padding: 1rem;
+  }
+
   .container > i {
     font-size: x-large;
   }
 
   .container > a {
-    font-size: larger;
+    font-size: large;
   }
 
-  .novyProjekt > .contact > span {
-    font-size: 3rem;
+  .socials {
+    padding: 1rem 0.75rem;
+    background-color: var(--shade-white-20);
+    border-radius: 20px;
+  }
+
+  .socials > ul {
+    font-size: x-large;
+    gap: 0.5rem;
   }
 }
 
