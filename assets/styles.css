@@ -25,9 +25,12 @@
   margin: 0;
 
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   width: 100svw;
 
   color: #fff;
@@ -125,12 +128,12 @@ section {
   align-items: center;
 }
 
-img {
+.image-container > img {
   max-width: 80%;
   height: 80%;
   display: block;
 
-  animation: animate 12s ease-in-out infinite;
+  animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
@@ -161,15 +164,16 @@ img {
   height: 10rem;
 
   background-color: var(--color-primary-accent);
-  border-top: 1px solid var(--shade-white-20);
-  border-bottom: 1px solid var(--shade-white-20);
+  border: 1px solid var(--shade-white-20);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+
+  gap: 1.5rem;
 }
 
-.project {
+.project > img {
   max-width: 5rem;
   max-height: 5rem;
 }
@@ -310,5 +314,66 @@ img {
 
   .card {
     width: 20%;
+  }
+
+  .novyProjekt > .contact {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projekty {
+    height: 14rem;
+  }
+
+  .projekty > .project > img {
+    max-width: 10rem;
+    max-height: 8rem;
+  }
+
+  .cards {
+    height: 15rem;
+    gap: 6rem;
+  }
+
+  .card {
+    font-size: larger;
+  }
+
+  .card > p {
+    font-size: medium;
+  }
+
+  .container > i {
+    font-size: x-large;
+  }
+
+  .container > a {
+    font-size: larger;
+  }
+
+  .novyProjekt > .contact > span {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  header > nav {
+    right: 15%;
   }
 }
