@@ -2,7 +2,7 @@
 
 :root {
   /* colors */
-  --color-primary: #111111;
+  --color-primary: #181818;
   --color-primary-accent: #141414;
   --color-accent: #42d392;
   --shade-white-50: #575b62;
@@ -10,7 +10,7 @@
 
   /* dotted bg */
   --dot-bg: var(--color-primary);
-  --dot-color: #1f1f20;
+  --dot-color: #2b2b2b;
   --dot-size: 2px;
   --dot-space: 22px;
 
