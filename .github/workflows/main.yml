@@ -1,0 +1,16 @@
+name: save and deploy
+on:
+  push: 
+    branches: [main]
+  workflow_dispatch:
+  
+  jobs:
+    deploy: 
+      steps: 
+        - name: Sync files to hosting
+          uses: VVaczi/portolio-web/index.html
+          with:
+            server: ftp.vvaculik.cz
+            username: vvaculik.cz
+            password: ${{ secret.ftp_password}}
+    
