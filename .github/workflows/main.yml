@@ -19,9 +19,8 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          echo "Host $FTP_SERVER" >> ~/.ssh/config
-          echo "    User $FTP_USERNAME" >> ~/.ssh/config
-          echo "    Password $FTP_PASSWORD" >> ~/.ssh/config
+          echo "machine $FTP_SERVER login $FTP_USERNAME password $FTP_PASSWORD" > ~/.netrc
+          chmod 600 ~/.netrc
 
       - name: Deploy to FTP 🌐
         run: |
