@@ -29,4 +29,4 @@ jobs:
 
       - name: Deploy to FTP 🌐
         run: |
-          lftp -c "open -e 'mirror --reverse --delete --verbose=3 ./ /public_html/' $FTP_SERVER"
+          lftp -c "open -e 'mirror --reverse --delete --verbose=3 ./ /public_html' $FTP_SERVER"
