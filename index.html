@@ -15,17 +15,20 @@
   </head>
   <body>
     <header>
-      <h3>Vojtěch <span class="accent">Vaczi</span> Vaculík</h3>
-      <div></div>
+      <h3>Vojtěch <span class="title-accent accent">Vaczi</span> Vaculík</h3>
       <nav>
         <ul>
-          <li>
-            <div class="line accent"></div>
+          <li class="active">
+            <div class="line"></div>
             <a href="#uvod">Úvod</a>
           </li>
           <li>
             <div class="line"></div>
-            <a href="#projekty">Projekty</a>
+            <a href="#reference">Reference</a>
+          </li>
+          <li>
+            <div class="line"></div>
+            <a href="#sluzby">Služby</a>
           </li>
           <li>
             <div class="line"></div>
@@ -33,113 +36,214 @@
           </li>
           <li>
             <div class="line"></div>
-            <a href="#novyProjekt">Nový projekt</a>
+            <a href="#kontakt">Kontakt</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="uvod" class="uvod">
-        <div class="image-container">
-          <img src="./assets/images/me.webp" alt="Webp image" />
+      <section id="uvod">
+        <div class="portrait">
+          <img
+            src="./assets/images/Vector.jpg"
+            alt="profile picture"
+            class="profile-pic"
+          />
         </div>
-        <div class="description">
-          <h3>Webový</h3>
-          <h4>designér <span class="accent">/</span> vývojář</h4>
+        <div class="profile-desc">
+          <h3 class="accent">Vojtěch Vaculík</h3>
+          <h1>
+            Webový designér <span class="accent">& <br />Vývojář</span>
+          </h1>
+          <p>
+            Mojí specialitou je design a vývoj responsivních webových stránek na
+            míru, dle přání klienta.
+          </p>
+          <div class="counters">
+            <div class="box shadow">
+              <h1 class="accent">3</h1>
+              <h5>roky <br />zkušeností</h5>
+            </div>
+            <div class="box shadow">
+              <h1 class="accent">3</h1>
+              <h5>dokončené <br />projekty</h5>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="projekty" class="projekty">
+      <div class="separator"></div>
+      <section id="reference">
+        <a class="project shadow" id="okt" href="https://www.kocicitlapky.cz/"
+          ><img src="./assets/images/projects/okt.svg" alt=""
+        /></a>
         <a
-          href="https://www.penzion-antika.cz/"
-          class="project"
-          target="_blank"
+          class="project shadow"
+          id="raj_barber"
+          href="https://www.rajbarber.cz/"
         >
-          <img src="./assets/images/projects/ANTIKA.svg" alt="antika logo" />
-        </a>
-        <span class="accent"> - </span>
-        <a href="https://www.kocicitlapky.cz/" class="project" target="_blank"
-          ><img src="./assets/images/projects/okt_logo.svg" alt="okt logo"
+          <img src="./assets/images/projects/raj_barber.svg" alt=""
+        /></a>
+        <a
+          class="project shadow"
+          id="antika"
+          href="https://www.penzion-antika.cz/"
+        >
+          <img src="./assets/images/projects/antika.svg" alt=""
         /></a>
       </section>
-      <section id="technologie" class="technologie">
-        <div class="description">
-          <h3>Kooperace s klienty</h3>
-          <h4>zanechávající pozitivní impakt</h4>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <i class="fa-solid fa-pencil"></i>
-            <h4>UX <span>&</span> UI</h4>
-            <p>
-              Designování intuitivních a efektivních uživatelských rozhraní.
-            </p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-object-ungroup"></i>
-            <h4>Design</h4>
-            <p>
-              Vizálně ohromující a čistý design ušitý na míru každého klienta.
-            </p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-code"></i>
-            <h4>Vývoj</h4>
-            <p>
-              Realizace <span class="accent">Vaší</span> vize za použití
-              nejnovějších technologií a designových trendů.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="novyProjekt" class="novyProjekt">
-        <div class="description">
-          <h3>Máte zájem</h3>
-          <h4>o spolupráci ?</h4>
-        </div>
-        <div class="contact">
-          <div class="container">
-            <i class="fa-solid fa-at"></i>
-
-            <a href="mailto: vaculik.vojtech@gmail.com"
-              >vaculik.vojtech@gmail.com</a
+      <div class="separtor"></div>
+      <section id="sluzby"></section>
+      <div class="separator"></div>
+      <section id="technologie">
+        <h1>Technologický <br /><span class="accent">stack</span></h1>
+        <div class="stack">
+          <div class="first">
+            <a
+              class="blob blob-large"
+              id="javascript"
+              href="https://cs.wikipedia.org/wiki/JavaScript"
+              target="_blank"
             >
+              <img src="./assets/images/stack/js.svg" alt="javascript logo" />
+            </a>
+            <a
+              class="blob blob-large"
+              id="typescript"
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/ts.svg" alt="typescript logo" />
+            </a>
           </div>
-          <span class="accent"> - </span>
-          <div class="container">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+420702 800 554">+420 702 800 554</a>
+          <div class="inter">
+            <a
+              class="blob blob-medium"
+              id="nodejs"
+              href="https://nodejs.org/en"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/nodejs.svg" alt="nodejs logo" />
+            </a>
+          </div>
+          <div class="second">
+            <a
+              class="blob blob-medium"
+              id="vuejs"
+              href="https://vuejs.org/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/vuejs.png" alt="vuejs logo" />
+            </a>
+            <a
+              class="blob blob-medium"
+              id="angular"
+              href="https://angular.io/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/angular.png" alt="angular logo" />
+            </a>
+          </div>
+          <div class="third">
+            <a
+              class="blob blob-small"
+              id="expressjs"
+              href="https://expressjs.com/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/stack/expressjs.png"
+                alt="expressjs logo"
+              />
+            </a>
+            <a
+              class="blob blob-small"
+              id="nestjs"
+              href="https://nestjs.com/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/nestJS.png" alt="nestjs logo" />
+            </a>
+          </div>
+          <div class="fourth">
+            <a
+              class="blob blob-smallest"
+              id="mongoDB"
+              href="https://www.mongodb.com/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/mongoDB.png" alt="mongoDB logo" />
+            </a>
+            <a
+              class="blob blob-smallest"
+              id="mariaDB"
+              href="https://mariadb.org/"
+              target="_blank"
+            >
+              <img src="./assets/images/stack/mariaDB.png" alt="mariaDB logo" />
+            </a>
           </div>
         </div>
+        <p>
+          Technologie pro vývoj, dle požadavku
+          <span class="accent">každého klienta</span>, pro dosažení nejvyšší
+          optimality.
+        </p>
+      </section>
+      <div class="separator"></div>
+      <section id="kontakt">
+        <form class="shadow">
+          <div class="contacts">
+            <div class="contact email">
+              <div class="desc">
+                <i class="bi bi-envelope-fill"></i>
+                <span>Email</span>
+              </div>
+              <div class="info"><p>vaculik.vojtech@gmail.com</p></div>
+            </div>
+            <div class="contact phone">
+              <div class="desc">
+                <i class="bi bi-phone"></i>
+                <span>Telefon</span>
+              </div>
+              <div class="info"><p>+420 702 800 554</p></div>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="inputs">
+            <div class="info">
+              <h1>Pošlete <span class="accent">mi</span> zprávu</h1>
+              <p>
+                Pokud máte pro mě nějakou práci, nebo máte jakékoliv otázky
+                týkající se mě a mojí práce, můžeme mu poslat zprávu právě
+                odsud. Rád <span class="accent">Vám</span> pomůžu a odpovím na
+                vše, co potřebujete
+              </p>
+            </div>
+
+            <input type="text" name="name" id="name" placeholder="John Doe" />
+            <input type="email" name="email" id="email" placeholder="@" />
+            <div class="message">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="..."
+              >
+              </textarea>
+              <button type="submit" class="submit">
+                <!-- icon -->
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
-      <div class="socials">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/vojtech.vaculik.75/"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/vojtechvaculik" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/VVaczi" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="linkedin.com/in/vojtěch-vaculík-89a3a622a" target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+      <p>
+        <span class="accent">© </span>Vojtěch Vaculík
+        <span class="accent">2023</span>
+      </p>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>
