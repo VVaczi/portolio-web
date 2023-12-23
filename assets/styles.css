@@ -71,6 +71,7 @@ section {
 
 .bi {
   color: var(--primary-color);
+  margin-bottom: 0.25rem;
 }
 
 .shadow {
@@ -140,21 +141,20 @@ header > nav > ul > li > a {
 
   color: var(--white-color-50);
   text-decoration: none;
-  border-left: 2px solid var(--white-color-50);
+  border-left: 1px solid var(--white-color-50);
   padding-left: 0.25rem;
 }
 
 header > nav > ul > li > a:hover {
   text-decoration: underline;
-  font-weight: bold;
-  border-color: var(--primary-color);
+  border-left: 2px solid var(--primary-color);
   color: #fff;
 }
 
 /* Main */
 
 main {
-  padding-top: 6.5rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,17 +173,20 @@ section {
 
 /** Uvod **/
 #uvod {
-  position: relative;
   gap: 1rem;
 
   display: flex;
   align-items: start;
 }
+
 .portrait {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-self: center;
+
+  mask-image: url(./images/blob.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .profile-desc {
@@ -400,6 +403,7 @@ form {
 
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
+  background-color: var(--main-color);
 }
 
 form > .contacts {
@@ -408,6 +412,7 @@ form > .contacts {
   justify-content: center;
   align-content: center;
   padding: 1rem;
+  gap: 1rem;
 }
 
 form > .contacts > .contact {
@@ -422,20 +427,65 @@ form > .contacts > .contact > .desc,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: small;
 }
 
-.email > .info,
-.phone > .info {
-  font-family: 0.25rem;
+.info > a {
   color: var(--white-color-50);
+  text-decoration: none;
+}
+
+.info > a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 form > .inputs {
+  position: relative;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
+}
+
+.inputs > .info > h1 {
+  width: 100%;
+  padding-bottom: 0.25rem;
+}
+
+.inputs > .info > p {
+  text-align: justify;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: var(--dot-color);
+  border: 1px solid var(--main-accent-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.5rem;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.inputs > .message > button {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  float: right;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-accent-color);
+  border-radius: var(--border-radius);
+  color: #fff;
+}
+
+.inputs > .message > button:hover {
+  border-color: var(--primary-color);
+  cursor: pointer;
 }
 
 /* footer */
