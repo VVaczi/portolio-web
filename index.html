@@ -246,6 +246,37 @@
               </div>
             </div>
           </div>
+          <div class="separator"></div>
+          <div class="inputs">
+            <div class="info">
+              <h1>Pošlete <span class="accent">mi</span> zprávu</h1>
+              <p>
+                Pokud máte pro mě nějakou práci, nebo máte jakékoliv otázky
+                týkající se mě a mojí práce, můžeme mu poslat zprávu právě
+                odsud. Rád <span class="accent">Vám</span> pomůžu a odpovím na
+                vše, co potřebujete.
+              </p>
+            </div>
+
+            <input type="text" name="name" id="name" placeholder="Vaše jméno" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Váš email"
+            />
+            <div class="message">
+              <textarea
+                style="resize: none"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Zpráva"
+              ></textarea>
+              <button onclick="test();">Odeslat</button>
+            </div>
+          </div>
         </form>
       </section>
     </main>
