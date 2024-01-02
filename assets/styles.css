@@ -524,54 +524,6 @@ form > .contacts > .contact > .desc,
   color: var(--primary-color);
 }
 
-form > .inputs {
-  position: relative;
-  padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.inputs > .info > h1 {
-  width: 100%;
-  padding-bottom: 0.25rem;
-}
-
-.inputs > .info > p {
-  text-align: justify;
-}
-
-input,
-textarea {
-  width: 100%;
-  background-color: var(--dot-color);
-  border: 1px solid var(--main-accent-color);
-  border-radius: var(--border-radius);
-  padding: 0.5rem 0.5rem;
-  color: #fff;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
-}
-
-.inputs > .message > button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  float: right;
-  background-color: var(--main-color);
-  border: 1px solid var(--white-color-20);
-  border-radius: var(--border-radius);
-  color: #fff;
-}
-
-.inputs > .message > button:hover {
-  border-color: var(--primary-color);
-  cursor: pointer;
-}
-
 /* footer */
 
 footer {
