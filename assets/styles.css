@@ -94,13 +94,13 @@ header {
   padding: 0.75rem;
   left: 50%;
   transform: translate(-50%);
+  backdrop-filter: blur(10px);
 }
 
 header > h3 {
   margin-bottom: 0.25rem;
   padding: 0rem 0.25rem;
   border-radius: var(--border-radius);
-  backdrop-filter: blur(5px);
   width: fit-content;
 }
 
@@ -180,13 +180,14 @@ section {
 }
 
 .portrait {
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-self: center;
 
-  mask-image: url(./images/blob.svg);
+  /* mask-image: url(./images/blob.svg);
   mask-repeat: no-repeat;
-  mask-position: center;
+  mask-position: center; */
 }
 
 .profile-desc {
