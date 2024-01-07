@@ -1,39 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-
 @import url("./_global.css");
 @import url("./_variables.css");
-
-/* sekce */
 @import url("./section_styles/uvod.css");
 @import url("./section_styles/reference.css");
 @import url("./section_styles/sluzby.css");
 @import url("./section_styles/technologie.css");
 @import url("./section_styles/kontakt.css");
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
-
 html {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 body {
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: #fff;
   font-family: var(--primary-font);
-
   background: linear-gradient(
         90deg,
         var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
@@ -47,9 +39,6 @@ body {
       center / var(--dot-space) var(--dot-space),
     var(--dot-color);
 }
-
-/* Header */
-
 header {
   position: relative;
   z-index: 1000;
@@ -57,40 +46,34 @@ header {
   padding-top: 1rem;
   margin-bottom: -2rem;
 }
-
 header > h3 {
   margin-top: 3rem;
   margin-bottom: 0.25rem;
-  padding: 0rem 0.25rem;
+  padding: 0 0.25rem;
   width: 100%;
   text-align: center;
 }
-
 header > h3,
 .title-accent {
   font-weight: 400;
   font-size: 1.5rem;
 }
-
 header > h3 > .title-accent {
   font-family: var(--title-font);
 }
-
 nav {
   position: fixed;
   left: 50%;
   transform: translate(-50%);
 }
-
 header > nav {
-  -webkit-box-shadow: 0px 0px 1px 2px rgba(51, 101, 170, 1);
-  -moz-box-shadow: 0px 0px 1px 2px rgba(51, 101, 170, 1);
-  box-shadow: 0px 0px 1px 2px rgba(51, 101, 170, 1);
+  -webkit-box-shadow: 0 0 1px 2px rgba(51, 101, 170, 1);
+  -moz-box-shadow: 0 0 1px 2px rgba(51, 101, 170, 1);
+  box-shadow: 0 0 1px 2px rgba(51, 101, 170, 1);
   border-radius: var(--border-radius);
   background-color: var(--main-accent-color);
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0;
 }
-
 header > nav > ul {
   display: flex;
   justify-content: space-evenly;
@@ -100,37 +83,29 @@ header > nav > ul {
   padding: 0 1rem;
   text-underline-offset: 0.25rem;
 }
-
 header > nav > ul > li > a {
   display: flex;
   font-size: 0.65rem;
-
   color: var(--white-color-50);
   text-decoration: none;
   border-left: 1px solid var(--white-color-50);
   padding-left: 0.25rem;
 }
-
 header > nav > ul > li > a:hover {
   text-decoration: underline;
   border-left: 2px solid var(--primary-color);
   color: #fff;
 }
-
 @media only screen and (min-width: 1024px) {
   body {
     width: 80%;
   }
-
   nav {
     width: 33rem;
     right: 50%;
     transform: translate(-50%);
   }
 }
-
-/* Main */
-
 main {
   padding-top: 5rem;
   display: flex;
@@ -139,7 +114,6 @@ main {
   align-items: center;
   gap: 2rem;
 }
-
 section {
   display: flex;
   flex-direction: column;
@@ -147,16 +121,12 @@ section {
   align-items: center;
   width: 80%;
 }
-
-/* footer */
-
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem 0 1rem 0;
 }
-
 footer > p {
   color: #fff;
   padding: 0.5rem 2rem;

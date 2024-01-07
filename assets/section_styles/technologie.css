@@ -4,19 +4,16 @@
   align-items: center;
   z-index: 7;
 }
-
 #technologie > h1 {
   color: #f7df1e;
   text-align: center;
   padding-bottom: 0.25rem;
 }
-
 .stack {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding-bottom: 2rem;
 }
 .first,
@@ -28,81 +25,63 @@
   justify-content: center;
   align-items: center;
 }
-
 .first {
   gap: 6rem;
 }
-
 .inter {
   height: 2rem;
 }
-
 .second {
   margin-top: -2.3rem;
   gap: 3.9rem;
 }
-
 .third {
   gap: 0.5rem;
   margin-top: -0.7rem;
 }
-
 .inter-around {
   gap: 6rem;
   height: 2rem;
 }
-
 .fourth {
   gap: 0.15rem;
 }
-
 .blob {
   width: fit-content;
   border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #fff;
 }
-
 .blob-large {
   height: 5rem;
   width: 5rem;
 }
-
 .blob-medium {
   height: 4rem;
   width: 4rem;
 }
-
 .blob-medium > img {
   height: 2.5rem;
   width: 2.5rem;
 }
-
 .blob-small {
   width: 3rem;
   height: 3rem;
 }
-
 .blob-small > img {
   width: 2rem;
   height: auto;
 }
-
 .blob-smallest {
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .blob-smallest > img {
   width: 1rem;
   height: auto;
 }
-
-/*technologies*/
 #javascript {
   background-color: #f7df1e;
 }

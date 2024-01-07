@@ -4,34 +4,28 @@ section {
   -webkit-background-clip: content-box;
   background-clip: content-box;
 }
-
 .accent {
   color: var(--primary-color);
 }
-
 .separator {
   content: "";
   border-bottom: 1px solid var(--white-color-20);
   width: 80%;
   padding-top: 3rem;
 }
-
 .bi {
   color: var(--primary-color);
   margin-bottom: 0.25rem;
 }
-
 .shadow {
-  -webkit-box-shadow: -5px 5px 0px 6px rgba(30, 30, 30, 1);
-  -moz-box-shadow: -5px 5px 0px 6px rgba(30, 30, 30, 1);
-  box-shadow: -5px 5px 0px 6px rgba(30, 30, 30, 1);
+  -webkit-box-shadow: -5px 5px 0 6px rgba(30, 30, 30, 1);
+  -moz-box-shadow: -5px 5px 0 6px rgba(30, 30, 30, 1);
+  box-shadow: -5px 5px 0 6px rgba(30, 30, 30, 1);
 }
-
 p {
   font-size: 0.75rem;
   color: var(--white-color-50);
 }
-
 .hidden {
   display: none;
 }
