@@ -1,0 +1,90 @@
+#sluzby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.lines {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 1rem;
+  z-index: 100;
+  border-right: 2px solid var(--white-color-20);
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.25rem;
+  padding: 1.5rem 3rem;
+
+  border-top: 1px dashed var(--white-color-20);
+}
+
+.item > .bi {
+  display: flex;
+  position: absolute;
+  top: -12.5px;
+  left: 0;
+  border: 1px solid var(--white-color-20);
+  border-radius: var(--border-radius);
+  background-color: var(--main-color);
+  padding: 0.3rem;
+}
+
+.item > .title > .numeration {
+  font-size: xx-small;
+  color: var(--white-color-20);
+}
+
+.marketing {
+  padding-bottom: 4rem;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+}
+
+.work > a {
+  z-index: 100;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  background-color: var(--main-accent-color);
+  border: 1px solid var(--white-color-50);
+  border-radius: var(--border-radius);
+  color: var(--white-color-50);
+  cursor: pointer;
+}
+
+.work > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.work > hr {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  z-index: 0;
+
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: var(--white-color-20);
+}

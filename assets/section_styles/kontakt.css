@@ -1,0 +1,61 @@
+#kontakt {
+  padding-bottom: 2rem;
+}
+
+.contact-info {
+  padding: 1rem 0 2rem 0;
+  font-size: 0.75rem;
+  color: var(--white-color-50);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--main-color);
+
+  z-index: 6;
+}
+
+form > .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+form > .contacts > .contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+form > .contacts > .contact > .desc,
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.info > a {
+  color: var(--white-color-50);
+  text-decoration: none;
+}
+
+.info > a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}

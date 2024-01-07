@@ -1,0 +1,18 @@
+#reference {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  z-index: 9;
+}
+
+.project {
+  border: 1px solid var(--primary-color);
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+}
+
+.project > img {
+  padding: 0.5rem;
+}
