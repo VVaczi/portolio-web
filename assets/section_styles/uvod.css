@@ -1,29 +1,34 @@
 /** Uvod **/
 #uvod {
-  gap: 1rem;
-
   display: flex;
   align-items: start;
 }
 
 .portrait {
-  padding: 2rem 0;
+  margin-top: -6rem;
   display: flex;
   justify-content: center;
   align-self: center;
-
-  /* mask-image: url(./images/blob.svg);
+  width: 400px;
+  height: auto;
+  mask-image: url("../images/blob.svg");
   mask-repeat: no-repeat;
-  mask-position: center; */
+  mask-position: center;
+}
+
+.portrait > img {
+  margin-top: 3rem;
+  width: 400px;
+  height: auto;
 }
 
 .profile-desc {
+  margin-top: -2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 1rem;
-
   width: 80%;
 }
 
@@ -32,6 +37,7 @@
 }
 
 .counters {
+  margin-top: 2rem;
   display: flex;
   gap: 2rem;
 }

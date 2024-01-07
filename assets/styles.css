@@ -20,6 +20,9 @@
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   color: #fff;
   font-family: var(--primary-font);
@@ -42,19 +45,17 @@ body {
 
 header {
   z-index: 1000;
-  position: fixed;
   width: 90%;
-  padding: 0.75rem;
-  left: 50%;
-  transform: translate(-50%);
-  backdrop-filter: blur(10px);
+  padding-top: 1rem;
 }
 
 header > h3 {
+  margin-top: 1.75rem;
   margin-bottom: 0.25rem;
   padding: 0rem 0.25rem;
   border-radius: var(--border-radius);
-  width: fit-content;
+  width: auto;
+  text-align: center;
 }
 
 header > h3,
@@ -66,6 +67,12 @@ header > h3,
 
 header > h3 > .title-accent {
   font-family: var(--title-font);
+}
+
+nav {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 header > nav {
@@ -84,7 +91,6 @@ header > nav > ul {
   list-style: none;
   gap: 1.5rem;
   padding: 0 1rem;
-
   text-underline-offset: 0.25rem;
 }
 

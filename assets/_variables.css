@@ -9,7 +9,7 @@
 
   /* dotted bg */
   --dot-bg: var(--main-color);
-  --dot-color: #111111;
+  --dot-color: #151515;
   --dot-size: 3px;
   --dot-space: 22px;
 
@@ -19,4 +19,9 @@
 
   /* style */
   --border-radius: 4px;
+
+  /* query sizes */
+  --medium-query: 768px;
+  --laptop-query: 1024px;
+  --largest-query: 1440px;
 }
