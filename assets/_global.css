@@ -11,7 +11,7 @@ section {
 
 .separator {
   content: "";
-  border-bottom: 1px solid var(--white-color-10);
+  border-bottom: 1px solid var(--white-color-20);
   width: 80%;
   padding-top: 3rem;
 }
@@ -30,4 +30,8 @@ section {
 p {
   font-size: 0.75rem;
   color: var(--white-color-50);
+}
+
+.hidden {
+  display: none;
 }

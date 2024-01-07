@@ -47,20 +47,20 @@ header {
   z-index: 1000;
   width: 90%;
   padding-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 header > h3 {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
   margin-bottom: 0.25rem;
   padding: 0rem 0.25rem;
   border-radius: var(--border-radius);
-  width: auto;
+  width: 100%;
   text-align: center;
 }
 
 header > h3,
 .title-accent {
-  text-align: center;
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -96,7 +96,7 @@ header > nav > ul {
 
 header > nav > ul > li > a {
   display: flex;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
 
   color: var(--white-color-50);
   text-decoration: none;

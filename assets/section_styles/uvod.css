@@ -9,16 +9,18 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  width: 400px;
+  width: 100svw;
   height: auto;
   mask-image: url("../images/blob.svg");
   mask-repeat: no-repeat;
   mask-position: center;
+  mask-size: cover;
+
+  outline: 1px solid red;
 }
 
 .portrait > img {
-  margin-top: 3rem;
-  width: 400px;
+  width: calc(100% - 10%);
   height: auto;
 }
 
