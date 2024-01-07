@@ -113,6 +113,7 @@
   background-color: #17212b;
 }
 #nodejs {
+  z-index: 10;
   background-color: #ffffff;
 }
 #angular {

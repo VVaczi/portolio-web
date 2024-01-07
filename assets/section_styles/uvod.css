@@ -1,7 +1,8 @@
 /** Uvod **/
 #uvod {
   display: flex;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
 }
 
 .portrait {
@@ -25,13 +26,18 @@
 }
 
 .profile-desc {
-  margin-top: -2.5rem;
+  margin-top: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  gap: 1rem;
+  align-items: center;
   width: 80%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .profile-desc > h1 {
@@ -60,4 +66,19 @@
 
 .counters > .box > h1 {
   font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #uvod {
+    flex-direction: row;
+  }
+
+  .portrait {
+    width: 80%;
+    height: auto;
+  }
+
+  .profile-desc {
+    align-items: start;
+  }
 }
