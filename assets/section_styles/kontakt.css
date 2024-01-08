@@ -1,0 +1,99 @@
+#kontakt {
+  height: 70svh;
+  padding-bottom: 2rem;
+}
+.contact-info {
+  padding: 1rem 0 2rem 0;
+}
+.contact-info > p {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--main-color);
+  z-index: 6;
+}
+form > .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+form > .contacts > .contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+form > .contacts > .contact > .desc,
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+.info > a {
+  color: var(--white-color-80);
+  text-decoration: none;
+}
+.info > a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-info > p {
+    width: 75%;
+    font-size: medium;
+  }
+
+  form {
+    padding: 3rem;
+  }
+
+  form > .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  form > .contacts > .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact > .desc {
+    gap: 0.5rem;
+  }
+
+  .contact > .desc > i {
+    font-size: xx-large;
+  }
+
+  .contact > .desc > span {
+    font-size: larger;
+  }
+
+  .info > a {
+    font-size: large;
+  }
+}

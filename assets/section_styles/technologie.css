@@ -1,0 +1,172 @@
+#technologie {
+  height: 100svh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  gap: 3rem;
+}
+#technologie > h1 {
+  color: #f7df1e;
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+#technologie > p {
+  width: 50%;
+  color: #fff;
+  text-align: center;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.first,
+.inter,
+.second,
+.third,
+.fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first {
+  gap: 6rem;
+}
+.inter {
+  height: 2rem;
+}
+.second {
+  margin-top: -2.3rem;
+  gap: 3.9rem;
+}
+.third {
+  gap: 0.5rem;
+  margin-top: -0.7rem;
+}
+.inter-around {
+  gap: 6rem;
+  height: 2rem;
+}
+.fourth {
+  gap: 0.15rem;
+}
+.blob {
+  width: fit-content;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.blob-large {
+  height: 5rem;
+  width: 5rem;
+}
+.blob-medium {
+  height: 4rem;
+  width: 4rem;
+}
+.blob-medium > img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.blob-small {
+  width: 3rem;
+  height: 3rem;
+}
+.blob-small > img {
+  width: 2rem;
+  height: auto;
+}
+.blob-smallest {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.blob-smallest > img {
+  width: 1rem;
+  height: auto;
+}
+#javascript {
+  background-color: #f7df1e;
+}
+#typescript {
+  background-color: #3178c6;
+}
+#vuejs {
+  background-color: #17212b;
+}
+#nodejs {
+  z-index: 10;
+  background-color: #ffffff;
+}
+#angular {
+  background-color: #76001a;
+}
+#expressjs {
+  background-color: #181818;
+}
+#nestjs {
+  background-color: #37040c;
+}
+#vuetify {
+  background-color: #ffffff;
+}
+#material {
+  background-color: #757575;
+}
+#mongoDB {
+  background-color: #02b853;
+}
+#mariaDB {
+  background-color: #d9d9d9;
+}
+
+.vert {
+  position: absolute;
+  border-left: 1px solid #ffffff05;
+  height: 150px;
+}
+
+.one {
+  top: 35%;
+  left: 10%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.thr {
+  bottom: 10%;
+  left: 5%;
+}
+
+.four {
+  top: 10%;
+  left: 50%;
+}
+
+.five {
+  bottom: 10%;
+  right: 12%;
+}
+
+.six {
+  right: 50%;
+  bottom: 3%;
+}
+
+@media only screen and (min-width: 1024px) {
+  #technologie > h1 {
+    font-size: xx-large;
+  }
+
+  #technologie > p {
+    font-size: medium;
+  }
+}
