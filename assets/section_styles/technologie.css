@@ -1,13 +1,21 @@
 #technologie {
+  height: 100svh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 7;
+  gap: 3rem;
 }
 #technologie > h1 {
   color: #f7df1e;
   text-align: center;
   padding-bottom: 0.25rem;
+}
+#technologie > p {
+  width: 50%;
+  color: #fff;
+  text-align: center;
 }
 .stack {
   display: flex;
@@ -75,8 +83,8 @@
   height: auto;
 }
 .blob-smallest {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 .blob-smallest > img {
   width: 1rem;
@@ -115,6 +123,42 @@
 }
 #mariaDB {
   background-color: #d9d9d9;
+}
+
+.vert {
+  position: absolute;
+  border-left: 1px solid #ffffff05;
+  height: 150px;
+}
+
+.one {
+  top: 35%;
+  left: 10%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.thr {
+  bottom: 10%;
+  left: 5%;
+}
+
+.four {
+  top: 10%;
+  left: 50%;
+}
+
+.five {
+  bottom: 10%;
+  right: 12%;
+}
+
+.six {
+  right: 50%;
+  bottom: 3%;
 }
 
 @media only screen and (min-width: 1024px) {

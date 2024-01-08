@@ -1,13 +1,17 @@
 #kontakt {
+  height: 70svh;
   padding-bottom: 2rem;
 }
 .contact-info {
   padding: 1rem 0 2rem 0;
+}
+.contact-info > p {
   font-size: 0.75rem;
-  color: var(--white-color-80);
+  color: #fff;
   text-align: center;
   letter-spacing: 1px;
 }
+
 form {
   display: flex;
   flex-direction: column;

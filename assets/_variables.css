@@ -1,11 +1,11 @@
 :root {
-  --main-color: #0c0c0c;
+  --main-color: #0f0f0f;
   --main-accent-color: #141414;
   --primary-color: #4386e4;
   --white-color-80: #ffffff80;
   --white-color-20: #ffffff20;
   --dot-bg: var(--main-color);
-  --dot-color: #171717;
+  --dot-color: #131313;
   --dot-size: 3px;
   --dot-space: 22px;
   --title-font: "Just Me Again Down Here", cursive;

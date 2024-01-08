@@ -1,10 +1,13 @@
 #reference {
+  height: 50svh;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
   z-index: 9;
+  row-gap: 0rem;
 }
 .project {
   border: 1px solid var(--white-color-80);
@@ -17,4 +20,8 @@
 }
 .project > img {
   padding: 0.5rem;
+}
+
+#raj_barber > img {
+  width: 6rem;
 }

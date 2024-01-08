@@ -1,4 +1,5 @@
 #sluzby {
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +14,7 @@
   align-items: end;
   gap: 1rem;
   z-index: 100;
-  border-right: 2px solid var(--white-color-20);
+  border-right: 1px dashed var(--white-color-20);
 }
 .item {
   width: 100%;
@@ -23,7 +24,7 @@
   justify-content: start;
   gap: 0.25rem;
   padding: 1.5rem 3rem;
-  border-top: 1px dashed var(--white-color-20);
+  border-top: 1px dotted var(--white-color-20);
 }
 .item > .bi {
   display: flex;
@@ -58,14 +59,12 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
   background-color: var(--main-accent-color);
-  border: 1px solid var(--white-color-80);
+  border: 1px solid var(--white-color-20);
   border-radius: var(--border-radius);
   color: var(--white-color-80);
   cursor: pointer;
 }
 .work > a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
@@ -84,7 +83,7 @@
 @media only screen and (min-width: 768px) {
   .lines {
     margin-top: 3rem;
-    border-right: 3px solid var(--white-color-20);
+    border-right: 2px dashed var(--white-color-20);
   }
 
   .item {
@@ -93,13 +92,13 @@
     align-items: end;
     justify-content: space-between;
 
-    border-top: 3px dashed var(--white-color-20);
+    border-top: 2px dotted var(--white-color-20);
   }
 
   .item > .bi {
-    top: -25px;
+    top: -23px;
     padding: 0.75rem;
-    border-width: 3px;
+    border-width: 2px;
   }
 
   .item > .title {
