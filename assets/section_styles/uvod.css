@@ -4,6 +4,7 @@
   justify-content: center;
 }
 .portrait {
+  position: relative;
   margin-top: -6rem;
   display: flex;
   justify-content: center;
@@ -61,11 +62,27 @@
   #uvod {
     flex-direction: row;
   }
+
   .portrait {
     width: 80%;
     height: auto;
   }
   .profile-desc {
     align-items: start;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile-info > h3 {
+    font-size: x-large;
+  }
+
+  .profile-info > h1 {
+    font-size: xx-large;
+  }
+
+  .profile-info > p {
+    width: 70%;
+    font-size: medium;
   }
 }

@@ -86,9 +86,9 @@ header > nav > ul {
 header > nav > ul > li > a {
   display: flex;
   font-size: 0.65rem;
-  color: var(--white-color-50);
+  color: var(--white-color-80);
   text-decoration: none;
-  border-left: 1px solid var(--white-color-50);
+  border-left: 1px solid var(--white-color-80);
   padding-left: 0.25rem;
 }
 header > nav > ul > li > a:hover {
@@ -96,6 +96,17 @@ header > nav > ul > li > a:hover {
   border-left: 2px solid var(--primary-color);
   color: #fff;
 }
+@media only screen and (min-width: 768px) {
+  header > h3 {
+    margin-top: 1.75rem;
+    font-size: x-large;
+  }
+
+  .title-accent {
+    font-size: xx-large;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   body {
     width: 80%;

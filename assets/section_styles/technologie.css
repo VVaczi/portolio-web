@@ -116,3 +116,13 @@
 #mariaDB {
   background-color: #d9d9d9;
 }
+
+@media only screen and (min-width: 1024px) {
+  #technologie > h1 {
+    font-size: xx-large;
+  }
+
+  #technologie > p {
+    font-size: medium;
+  }
+}

@@ -16,6 +16,7 @@
   border-right: 2px solid var(--white-color-20);
 }
 .item {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@
 .work {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: relative;
   bottom: -10px;
   left: 50%;
   width: 100%;
@@ -52,12 +53,14 @@
 }
 .work > a {
   z-index: 100;
-  padding: 0.2rem 1rem;
+  position: absolute;
+  top: -2rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   background-color: var(--main-accent-color);
-  border: 1px solid var(--white-color-50);
+  border: 1px solid var(--white-color-80);
   border-radius: var(--border-radius);
-  color: var(--white-color-50);
+  color: var(--white-color-80);
   cursor: pointer;
 }
 .work > a:hover {
@@ -76,4 +79,62 @@
   border-width: 0;
   color: gray;
   background-color: var(--white-color-20);
+}
+
+@media only screen and (min-width: 768px) {
+  .lines {
+    margin-top: 3rem;
+    border-right: 3px solid var(--white-color-20);
+  }
+
+  .item {
+    padding: 3rem 2rem;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+
+    border-top: 3px dashed var(--white-color-20);
+  }
+
+  .item > .bi {
+    top: -25px;
+    padding: 0.75rem;
+    border-width: 3px;
+  }
+
+  .item > .title {
+    width: 9rem;
+    border-right: 1px solid var(--white-color-20);
+    padding-right: 2rem;
+  }
+
+  .item > p {
+    padding-left: 2rem;
+    text-align: end;
+  }
+
+  .work > hr {
+    height: 3px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .item > .title {
+    width: 13rem;
+    font-size: x-large;
+  }
+
+  .item > p {
+    font-size: medium;
+  }
+
+  .marketing {
+    padding-bottom: 8rem;
+  }
+
+  .work > a {
+    top: -2.5rem;
+    font-size: larger;
+    padding: 1rem 2rem;
+  }
 }

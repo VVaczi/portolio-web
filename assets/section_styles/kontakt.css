@@ -4,7 +4,7 @@
 .contact-info {
   padding: 1rem 0 2rem 0;
   font-size: 0.75rem;
-  color: var(--white-color-50);
+  color: var(--white-color-80);
   text-align: center;
   letter-spacing: 1px;
 }
@@ -42,10 +42,54 @@ form > .contacts > .contact > .desc,
   font-size: small;
 }
 .info > a {
-  color: var(--white-color-50);
+  color: var(--white-color-80);
   text-decoration: none;
 }
 .info > a:hover {
   text-decoration: underline;
   color: var(--primary-color);
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-info > p {
+    width: 75%;
+    font-size: medium;
+  }
+
+  form {
+    padding: 3rem;
+  }
+
+  form > .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  form > .contacts > .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact > .desc {
+    gap: 0.5rem;
+  }
+
+  .contact > .desc > i {
+    font-size: xx-large;
+  }
+
+  .contact > .desc > span {
+    font-size: larger;
+  }
+
+  .info > a {
+    font-size: large;
+  }
 }

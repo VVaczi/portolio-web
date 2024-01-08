@@ -7,9 +7,13 @@
   z-index: 9;
 }
 .project {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--white-color-80);
   background-color: var(--main-color);
   border-radius: var(--border-radius);
+}
+
+.project:hover {
+  border-color: var(--primary-color);
 }
 .project > img {
   padding: 0.5rem;

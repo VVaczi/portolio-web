@@ -24,7 +24,7 @@ section {
 }
 p {
   font-size: 0.75rem;
-  color: var(--white-color-50);
+  color: var(--white-color-80);
 }
 .hidden {
   display: none;
